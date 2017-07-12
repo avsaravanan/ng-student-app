@@ -1,0 +1,21 @@
+<div class="table-responsive">
+  <table class="table table-hover" id="metric">
+    <thead>
+      <tr>
+        <th data-sort-initial="descending">Reference #</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students | async">
+        <td><a [routerLink]="['/editstudent',student.id]"  routerLinkActive="active current">{{student.id}}</a></td>
+        <td>{{student.first_name}}</td>
+        <td>{{student.last_name}}</td>
+        <td>{{student.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

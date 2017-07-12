@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active current"><a routerLink="/liststudent" >{{title}}</a></li>
+
+        <li routerLinkActive="active current"><a routerLink="/students" routerLinkActive="active">Students</a></li>
+        <li routerLinkActive="active current"><a routerLink="/addstudent" routerLinkActive="active">Add Student</a></li>
+        <li routerLinkActive="active current"><a routerLink="/innovate" routerLinkActive="active">Innovate Idea</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
+
+
+</div>
